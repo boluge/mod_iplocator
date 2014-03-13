@@ -39,8 +39,83 @@
 	<config>
 		<fields name="params">
 			<fieldset name="REDIRECT">
+				<field name="actif1" type="checkbox" label="Redirection active" description="Permet d'activer la redirection" value="1" default="0" />
+				<field name="redirect1" type="list" label="Redirection si" description="Choisir si la redirection se fait lorsque le pays est le même ou pas." default="1">
+					<option value="0">pays différent</option>
+					<option value="1">pays identique</option>
+				</field>
+				<field name="code1" type="text" default="" label="Code ISO du Pays" description="Code ISO du pays en capital" size="2" />
+				<field name="url1" type="text" default="" label="URL de redirection" description="" size="64" />
 
+				<field type="spacer" name="space1" label="&lt;br/&gt;" />
 
+				<field name="actif2" type="checkbox" label="Redirection active" description="Permet d'activer la redirection" value="1" default="0" />
+				<field name="redirect2" type="list" label="Redirection si" description="Choisir si la redirection se fait lorsque le pays est le même ou pas." default="1">
+					<option value="0">pays différent</option>
+					<option value="1">pays identique</option>
+				</field>
+				<field name="code2" type="text" default="" label="Code ISO du Pays" description="Code ISO du pays en capital" size="2" />
+				<field name="url2" type="text" default="" label="URL de redirection" description="" size="64" />
+
+				<field type="spacer" name="space2" label="&lt;br/&gt;" />
+
+				<field name="actif3" type="checkbox" label="Redirection active" description="Permet d'activer la redirection" value="1" default="0" />
+				<field name="redirect3" type="list" label="Redirection si" description="Choisir si la redirection se fait lorsque le pays est le même ou pas." default="1">
+					<option value="0">pays différent</option>
+					<option value="1">pays identique</option>
+				</field>
+				<field name="code3" type="text" default="" label="Code ISO du Pays" description="Code ISO du pays en capital" size="2" />
+				<field name="url3" type="text" default="" label="URL de redirection" description="" size="64" />
+
+				<field type="spacer" name="space3" label="&lt;br/&gt;" />
+
+				<field name="actif4" type="checkbox" label="Redirection active" description="Permet d'activer la redirection" value="1" default="0" />
+				<field name="redirect4" type="list" label="Redirection si" description="Choisir si la redirection se fait lorsque le pays est le même ou pas." default="1">
+					<option value="0">pays différent</option>
+					<option value="1">pays identique</option>
+				</field>
+				<field name="code4" type="text" default="" label="Code ISO du Pays" description="Code ISO du pays en capital" size="2" />
+				<field name="url4" type="text" default="" label="URL de redirection" description="" size="64" />
+
+				<field type="spacer" name="space4" label="&lt;br/&gt;" />
+
+				<field name="actif5" type="checkbox" label="Redirection active" description="Permet d'activer la redirection" value="1" default="0" />
+				<field name="redirect5" type="list" label="Redirection si" description="Choisir si la redirection se fait lorsque le pays est le même ou pas." default="1">
+					<option value="0">pays différent</option>
+					<option value="1">pays identique</option>
+				</field>
+				<field name="code5" type="text" default="" label="Code ISO du Pays" description="Code ISO du pays en capital" size="2" />
+				<field name="url5" type="text" default="" label="URL de redirection" description="" size="64" />
+
+				<field type="spacer" name="space5" label="&lt;br/&gt;" />
+
+				<field name="actif6" type="checkbox" label="Redirection active" description="Permet d'activer la redirection" value="1" default="0" />
+				<field name="redirect6" type="list" label="Redirection si" description="Choisir si la redirection se fait lorsque le pays est le même ou pas." default="1">
+					<option value="0">pays différent</option>
+					<option value="1">pays identique</option>
+				</field>
+				<field name="code6" type="text" default="" label="Code ISO du Pays" description="Code ISO du pays en capital" size="2" />
+				<field name="url6" type="text" default="" label="URL de redirection" description="" size="64" />
+
+				<field type="spacer" name="space6" label="&lt;br/&gt;" />
+
+				<field name="actif7" type="checkbox" label="Redirection active" description="Permet d'activer la redirection" value="1" default="0" />
+				<field name="redirect7" type="list" label="Redirection si" description="Choisir si la redirection se fait lorsque le pays est le même ou pas." default="1">
+					<option value="0">pays différent</option>
+					<option value="1">pays identique</option>
+				</field>
+				<field name="code7" type="text" default="" label="Code ISO du Pays" description="Code ISO du pays en capital" size="2" />
+				<field name="url7" type="text" default="" label="URL de redirection" description="" size="64" />
+
+				<field type="spacer" name="space7" label="&lt;br/&gt;" />
+
+				<field name="actif8" type="checkbox" label="Redirection active" description="Permet d'activer la redirection" value="1" default="0" />
+				<field name="redirect8" type="list" label="Redirection si" description="Choisir si la redirection se fait lorsque le pays est le même ou pas." default="1">
+					<option value="0">pays différent</option>
+					<option value="1">pays identique</option>
+				</field>
+				<field name="code8" type="text" default="" label="Code ISO du Pays" description="Code ISO du pays en capital" size="2" />
+				<field name="url8" type="text" default="" label="URL de redirection" description="" size="64" />
 			</fieldset>
 			<fieldset name="FLAG">
 				<field name="flag" type="list" label="Type de drapeau" description="Choisir le style du drapeau affiché dans le module." default="shiny">
