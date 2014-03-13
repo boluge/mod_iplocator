@@ -1,0 +1,16 @@
+@import "compass";
+
+#iplocator {
+	p {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+}
+pre {
+        background:#efefef;
+        padding: 10px;
+        @include border-radius(5px);
+        font-size: 12px;
+        margin: 10px 0;
+    }

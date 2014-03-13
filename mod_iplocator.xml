@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * @copyright	Copyright (c) 2014 Ip Locator. All rights reserved.
+ * @license		GNU General Public License version 2 or later; see LICENSE.txt
+ */
+-->
+<extension type="module" version="3.0" client="site" method="upgrade">
+	<name>Ip Locator</name>
+	<author>Stéphane Deluce</author>
+	<creationDate>March 2014</creationDate>
+	<copyright>Copyright (c) 2014 IpLocator. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>stephane@b5prod.com</authorEmail>
+	<authorUrl>http://www.b5prod.com</authorUrl>
+	<version>1.0.0</version>
+	<description>
+	<![CDATA[
+
+	]]>
+	</description>
+
+	<files>
+		<filename module="mod_iplocator">mod_iplocator.php</filename>
+		<filename>helper.php</filename>
+		<filename>Gruntfile.js</filename>
+		<filename>package.json</filename>
+		<filename>config.rb</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+		<folder>assets</folder>
+	</files>
+
+	<languages folder="language">
+		<language tag="fr-FR">fr-FR.mod_iplocator.ini</language>
+		<language tag="fr-FR">fr-FR.mod_iplocator.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="REDIRECT">
+
+
+			</fieldset>
+			<fieldset name="FLAG">
+				<field name="flag" type="list" label="Type de drapeau" description="Choisir le style du drapeau affiché dans le module." default="shiny">
+					<option value="null">aucun</option>
+					<option value="flat">Flat</option>
+					<option value="shiny">Shiny</option>
+				</field>
+				<field name="flagsize" type="list" default="24" label="Taille du drapeau" description="">
+					<option value="16">16 px</option>
+					<option value="24">24 px</option>
+					<option value="32">32 px</option>
+					<option value="48">48 px</option>
+					<option value="64">64 px</option>
+				</field>
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+				/>
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+				/>
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC"
+				>
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC"
+				/>
+
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static"
+				>
+					<option value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
